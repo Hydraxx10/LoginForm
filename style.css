@@ -1,7 +1,7 @@
 body {
     font-family: 'PT Sans', sans-serif;
     box-sizing: border-box;
-    background-image: url('./images/background1.png');
+    background-image: url('background1.png');
     background-size:cover ;
     background-repeat: no-repeat;
     background-position: center center;
@@ -203,13 +203,15 @@ footer {
         bottom: 1px;
     }
 
-#eye {
+#imgVis {
     position: relative;
     bottom: 36.5px;
     left: 140px;
+    color: #9826ac
+
 }
 
-#eye a :visited, :active, :link  {
+#imgVis :visited, :active, :link  {
     color: #9826ac
 }
 
