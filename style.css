@@ -207,11 +207,12 @@ footer {
     position: relative;
     bottom: 36.5px;
     left: 140px;
-    color: #9826ac
+    color: #919191;
+    cursor: pointer;
 
 }
 
-#imgVis :visited, :active, :link  {
+#imgVis:hover  {
     color: #9826ac
 }
 
