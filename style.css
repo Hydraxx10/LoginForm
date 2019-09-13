@@ -39,33 +39,48 @@ input {
     color: #919191;
     outline: none;
     box-sizing: border-box;
-
 }
 
-input[type="submit"] {
-    width: 77.8%;
-    background-color: #9826ac;
-    color: #e9ebee;
-    margin-top: 5px;
-    text-align: center;
-    cursor: pointer;
+    input.focus:focus {
+        border: 1px solid #9826ac;
+        height: 36px;
+    }
+    input:focus::-webkit-input-placeholder {color:transparent;}
 
-}
+    input:focus:-moz-placeholder { color:transparent;}
+
+
+    input[type="submit"] {
+        width: 77.8%;
+        background-color: #9826ac;
+        color: #e9ebee;
+        margin-top: 5px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #6e1b7c;
+    }
+
+    input[type="submit"]:active {
+        background-color: #8d329b;
+    }
+
+    input[type="checkbox"] {
+        display: inline;
+        padding: 0px;
+        position: relative;
+        right: 155px;
+        border: none;
+        cursor: pointer;
+        bottom: -0.9px;
+
+    }
 
 #password {
 
     margin-bottom: 10px;
-}
-
-input[type="checkbox"] {
-    display: inline;
-    padding: 0px;
-    position: relative;
-    right: 155px;
-    border: none;
-    cursor: pointer;
-    bottom: -0.9px;
-
 }
 
 span {
@@ -77,16 +92,24 @@ h3 {
     color: #1d2129;
 }
 
+#checkIt {
+    width: auto;
+    position: relative;
+    bottom: 35px;
+    right: 204px;
+}
+
 .remember {
     position: relative;
     float: left;
-    bottom: 22px;
-    left: 62px;
+    bottom: 20px;
+    left: 63px;
+    cursor: pointer;
 }
 
 .float {
     position: relative;
-    bottom: 43px;
+    bottom: 58px;
     left: 100px;
     text-decoration: none;
 }
@@ -99,14 +122,6 @@ h3 {
     .float:active {
         color: #8d329b;
     }
-
-input.focus:focus {
-        border: 1px solid #9826ac;
-        height: 36px;
-}
-    input:focus::-webkit-input-placeholder {color:transparent;}
-
-    input:focus:-moz-placeholder { color:transparent;}
 
 h1 span {
     padding: 0 20px 10px;
@@ -134,15 +149,6 @@ h1 span {
         color: #9826ac;
         
     }
-
-input[type="submit"]:hover {
-    background-color: #6e1b7c;
-}
-input[type="submit"]:active {
-    background-color: #8d329b;
-
-
-}
 
 footer {
     position: relative;
@@ -215,7 +221,6 @@ footer {
 #imgVis:hover  {
     color: #9826ac
 }
-
 
 a:-webkit-any-link{
     text-decoration:none !important;
