@@ -71,11 +71,11 @@ input {
         display: inline;
         padding: 0px;
         position: relative;
-        right: 155px;
         border: none;
         cursor: pointer;
-        bottom: -0.9px;
-
+        width: auto;
+        bottom: 35px;
+        right: 204px;
     }
 
 #password {
@@ -92,20 +92,23 @@ h3 {
     color: #1d2129;
 }
 
-#checkIt {
-    width: auto;
-    position: relative;
-    bottom: 35px;
-    right: 204px;
-}
-
 .remember {
     position: relative;
     float: left;
     bottom: 20px;
     left: 63px;
     cursor: pointer;
+    color: #919191
 }
+    .remember:visited  {
+     color: #919191;
+    }
+    .remember:hover {
+        color: #9826ac;
+    }
+    .remember:active {
+        color: #8d329b;
+    }
 
 .float {
     position: relative;
